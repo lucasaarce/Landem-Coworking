@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # Ruta absoluta al frontend
-FRONTEND_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'frontend'))
+FRONTEND_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'frontend'))
 
 app = Flask(__name__,
             template_folder=FRONTEND_PATH,  
