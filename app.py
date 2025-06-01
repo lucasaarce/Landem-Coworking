@@ -6,7 +6,15 @@ from email.mime.text import MIMEText
 
 load_dotenv()
 
-app = Flask(__name__)        
+app = Flask(__name__)  
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('.', 'robots.txt', mimetype='text/plain')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml', mimetype='application/xml')
 
 # --------------------------
 # Envío de correo
