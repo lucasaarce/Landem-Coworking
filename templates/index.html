@@ -7,7 +7,7 @@
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="assets/images/logotipo/favicon.ico"
+			href="{{ url_for('static', filename='images/logotipo/favicon.ico') }}"
 		/>
 		<meta name="title" content="Coworking-Landem" />
 		<meta
@@ -19,16 +19,16 @@
 			content="coworking, oficina compartida, espacio de trabajo, coworking en Barcelona, salas de reuniones, oficinas flexibles, comunidad emprendedora, espacio colaborativo, trabajo remoto, networking"
 		/>
 		<meta name="author" content="Lucas Arce" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/responsive.css" />
-		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	</head>
 	<body>
 		<header class="menu">
 			<a href="https://landem.es/" target="_blank" title="Landem">
 				<img
 					class="menu__logotipo"
-					src="assets/images/logotipo/completo-gris.png"
+					src="{{ url_for('static', filename='images/logotipo/completo-gris.png') }}"
 					alt="Landem"
 				/>
 			</a>
@@ -41,9 +41,9 @@
 			<div class="menu__selector">
 				<button class="lang-btn">Idioma ▾</button>
 				<div class="lang-dropdown">
-					<a href="index.html">Español</a>
-					<a href="ca.html">Català</a>
-					<a href="en.html">English</a>
+					<a href="/">Español</a>
+					<a href="/ca">Català</a>
+					<a href="/en">English</a>
 				</div>
 			</div>
 		</header>
@@ -71,7 +71,7 @@
 				<div>
 					<img
 						class="sobre-nosotros__image"
-						src="assets/images/oficina/camprodon3.jpg"
+						src="{{ url_for('static', filename='images/oficina/camprodon3.jpg') }}"
 						alt="Oficina"
 					/>
 				</div>
@@ -109,7 +109,7 @@
 				<div class="listado__servicio">
 					<img
 						class="listado__servicio--icono"
-						src="assets/images/iconos/imprimir.png"
+						src="{{ url_for('static', filename='images/iconos/imprimir.png') }}"
 						alt="Servicio"
 					/>
 					<div class="listado__servicio--titulo">Impresora</div>
@@ -117,7 +117,7 @@
 				<div class="listado__servicio">
 					<img
 						class="listado__servicio--icono"
-						src="assets/images/iconos/metro.png"
+						src="{{ url_for('static', filename='images/iconos/metro.png') }}"
 						alt="Servicio"
 					/>
 					<div class="listado__servicio--titulo">Buena conexión</div>
@@ -125,7 +125,7 @@
 				<div class="listado__servicio">
 					<img
 						class="listado__servicio--icono"
-						src="assets/images/iconos/restaurante.png"
+						src="{{ url_for('static', filename='images/iconos/restaurante.png') }}"
 						alt="Servicio"
 					/>
 					<div class="listado__servicio--titulo">Cocina equipada</div>
@@ -133,7 +133,7 @@
 				<div class="listado__servicio">
 					<img
 						class="listado__servicio--icono"
-						src="assets/images/iconos/wc.png"
+						src="{{ url_for('static', filename='images/iconos/wc.png') }}"
 						alt="Servicio"
 					/>
 					<div class="listado__servicio--titulo">2 baños</div>
@@ -141,7 +141,7 @@
 				<div class="listado__servicio">
 					<img
 						class="listado__servicio--icono"
-						src="assets/images/iconos/wifi.png"
+						src="{{ url_for('static', filename='images/iconos/wifi.png') }}"
 						alt="Servicio"
 					/>
 					<div class="listado__servicio--titulo">Wifi alta velocidad</div>
@@ -149,7 +149,7 @@
 				<div class="listado__servicio">
 					<img
 						class="listado__servicio--icono"
-						src="assets/images/iconos/aire.png"
+						src="{{ url_for('static', filename='images/iconos/aire.png') }}"
 						alt="Servicio"
 					/>
 					<div class="listado__servicio--titulo">Aire acondicionado</div>
@@ -164,7 +164,7 @@
 				<div class="listado__plan">
 					<img
 						class="listado__plan--foto"
-						src="assets/images/iconos/fijo.png"
+						src="{{ url_for('static', filename='images/iconos/fijo.png') }}"
 						alt="Plan"
 					/>
 					<div class="listado__plan--titulo">Puesto fijo</div>
@@ -181,7 +181,7 @@
 				<div class="listado__plan">
 					<img
 						class="listado__plan--foto"
-						src="assets/images/iconos/flex.jpg"
+						src="{{ url_for('static', filename='images/iconos/flex.jpg') }}"
 						alt="Plan"
 					/>
 					<div class="listado__plan--titulo">Puesto flexible</div>
@@ -198,7 +198,7 @@
 				<div class="listado__plan">
 					<img
 						class="listado__plan--foto"
-						src="assets/images/iconos/reuniones.png"
+						src="{{ url_for('static', filename='images/iconos/reuniones.png') }}"
 						alt="Plan"
 					/>
 					<div class="listado__plan--titulo">Sala de reuniones</div>
@@ -221,42 +221,42 @@
 			</div>
 			<div class="slider">
 				<img
-					src="assets/images/oficina/camprodon0.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon0.jpg') }}"
 					class="slide active"
 					alt="Foto 1"
 				/>
 				<img
-					src="assets/images/oficina/camprodon1.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon1.jpg') }}"
 					class="slide"
 					alt="Foto 2"
 				/>
 				<img
-					src="assets/images/oficina/camprodon2.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon2.jpg') }}"
 					class="slide"
 					alt="Foto 3"
 				/>
 				<img
-					src="assets/images/oficina/camprodon4.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon4.jpg') }}"
 					class="slide"
 					alt="Foto 4"
 				/>
 				<img
-					src="assets/images/oficina/camprodon6.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon6.jpg') }}"
 					class="slide"
 					alt="Foto 4"
 				/>
 				<img
-					src="assets/images/oficina/camprodon7.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon7.jpg') }}"
 					class="slide"
 					alt="Foto 4"
 				/>
 				<img
-					src="assets/images/oficina/camprodon8.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon8.jpg') }}"
 					class="slide"
 					alt="Foto 4"
 				/>
 				<img
-					src="assets/images/oficina/camprodon9.jpg"
+					src="{{ url_for('static', filename='images/oficina/camprodon9.jpg') }}"
 					class="slide"
 					alt="Foto 4"
 				/>
@@ -325,7 +325,7 @@
 							<input type="checkbox" name="privacidad" required />
 							Acepto recibir respuesta de Landem
 						</label>
-						<input type="hidden" name="idioma" value="index">
+						<input type="hidden" name="idioma" value="{{ lang }}">
 						<button type="submit">Enviar</button>
 					</form>
 				</div>
@@ -379,7 +379,7 @@
 						<input type="checkbox" name="privacidad" required />
 						Acepto recibir respuesta de Landem
 					</label>
-					<input type="hidden" name="idioma" value="index">
+					<input type="hidden" name="idioma" value="{{ lang }}">
 					<button type="submit">Enviar</button>
 				</form>
 			</div>
@@ -387,17 +387,17 @@
 		<footer class="footer">
 			<div class="footer-left">
 				<img
-					src="assets/images/logotipo/landem.png"
+					src="{{ url_for('static', filename='images/logotipo/landem.png') }}"
 					alt="Logo"
 					class="footer-logo"
 				/>
 			</div>
 			<div class="footer-center">
-				<img src="assets/images/iconos/llamar.png" alt="Teléfono">
+				<img src="{{ url_for('static', filename='images/iconos/llamar.png') }}" alt="Teléfono">
 				<p>934 579 827</p>
 			</div>
 			<div class="footer-center">
-				<img src="assets/images/iconos/carta.png" alt="Mail">
+				<img src="{{ url_for('static', filename='images/iconos/carta.png') }}" alt="Mail">
 				<p>info@landem.es</p>
 			</div>
 			<div class="footer-right">&copy; Copyright 2025 Landem</div>

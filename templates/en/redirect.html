@@ -7,7 +7,7 @@
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="assets/images/logotipo/favicon.ico"
+			href="{{ url_for('static', filename='images/logotipo/favicon.ico') }}"
 		/>
 		<meta name="title" content="Coworking-Landem" />
 		<meta
@@ -19,7 +19,7 @@
 			content="Coworking, shared office, workspace, coworking in Barcelona, meeting rooms, flexible offices, entrepreneurial community, collaborative space, remote work, networking"
 		/>
 		<meta name="author" content="Lucas Arce" />
-		<link rel="stylesheet" href="css/redirect.css" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/redirect.css') }}" />
 	</head>
 	<body>
 		<div class="redirect__container">
@@ -28,7 +28,7 @@
 				<p>
 					We have received your form correctly. We will contact you as soon as possible.
 				</p>
-				<a href="en.html" class="redirect__button">Go back</a>
+				<a href="/en" class="redirect__button">Go back</a>
 			</div>
 		</div>
 	</body>

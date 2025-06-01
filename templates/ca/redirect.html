@@ -7,7 +7,7 @@
 		<link
 			rel="icon"
 			type="image/x-icon"
-			href="assets/images/logotipo/favicon.ico"
+			href="{{ url_for('static', filename='images/logotipo/favicon.ico') }}"
 		/>
 		<meta name="title" content="Coworking-Landem" />
 		<meta
@@ -19,7 +19,7 @@
 			content="coworking, oficina compartida, espai de treball, coworking a Barcelona, sales de reunions, oficines flexibles, comunitat emprenedora, espai col·laboratiu, treball remot, networking"
 		/>
 		<meta name="author" content="Lucas Arce" />
-		<link rel="stylesheet" href="css/redirect.css" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/redirect.css') }}" />
 	</head>
 	<body>
 		<div class="redirect__container">
@@ -29,7 +29,7 @@
 					Hem rebut el teu formulari correctament. Ens posarem en contacte
 					amb tu el més aviat possible.
 				</p>
-				<a href="ca.html" class="redirect__button">Tornar a l'inici</a>
+				<a href="/ca" class="redirect__button">Tornar a l'inici</a>
 			</div>
 		</div>
 	</body>

@@ -1,7 +1,7 @@
 /*###################################################################################*/
 @font-face {
 	font-family: "Dosis";
-	src: url("../assets/fonts/static/Dosis-VariableFont_wght.ttf")
+	src: url("../fonts/static/Dosis-VariableFont_wght.ttf")
 		format("truetype");
 }
 
@@ -115,7 +115,7 @@ section {
 	height: 60vh;
 	width: 100%;
 	margin-top: 90px;
-	background-image: url(../assets/images/oficina/camprodon5.jpg); 
+	background-image: url(../images/oficina/camprodon5.jpg); 
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -509,4 +509,3 @@ form button:hover {
 	z-index: 999;
 }
 
-/*###################################################################################*/
