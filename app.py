@@ -16,6 +16,10 @@ def robots():
 def sitemap():
     return send_from_directory('.', 'sitemap.xml', mimetype='application/xml')
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory('.', 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
 # --------------------------
 # Envío de correo
 # --------------------------

@@ -3,22 +3,56 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Coworking | Landem</title>
+		<title>Coworking Space in Gràcia, Barcelona | Flexible Offices - Landem</title>
 		<link
 			rel="icon"
 			type="image/x-icon"
 			href="/favicon.ico"
 		/>
 		<meta name="title" content="Coworking-Landem" />
-		<meta
-			name="description"
-			content="Discover our modern coworking space in Barcelona: flexible offices, meeting rooms, high-speed internet, and a professional community ideal for freelancers, startups, and businesses."
-		/>
+		<meta name="description" content="Rent your office at our coworking space in Gràcia, Barcelona. Modern spaces, fast internet, meeting rooms, and an entrepreneurial community. Book today and work better!" />
 		<meta
 			name="keywords"
 			content="Coworking, shared office, workspace, coworking in Barcelona, meeting rooms, flexible offices, entrepreneurial community, collaborative space, remote work, networking, coworking in Gràcia, coworking space in Barcelona, shared offices in Gràcia, office rental in Barcelona, meeting rooms in Gràcia, flexible offices in Barcelona, entrepreneurial community in Gràcia, collaborative space in Barcelona, remote work in Gràcia, networking in Barcelona, coworking with natural light, workspace with 24/7 access, coworking with equipped kitchen, offices with air conditioning, coworking near Lesseps metro, workspace with private lockers, coworking with printer and scanner, coworking space for freelancers, private offices in Gràcia, coworking with event rooms"
 		/>
 		<meta name="author" content="Lucas Arce" />
+		<meta
+			property="og:title"
+			content="Coworking in Gràcia, Barcelona | Landem"
+		/>
+		<meta
+			property="og:description"
+			content="Flexible offices, meeting rooms, and a professional community. Reserve your workspace in Gràcia!"
+		/>
+		<meta property="og:image" content="{{ url_for('static', filename='images/oficina/camprodon5.jpg') }}" />
+		<meta property="og:url" content="https://coworkinglandem.es/en/" />
+		<meta property="og:type" content="website" />
+		<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "CoworkingSpace",
+					"name": "Coworking Landem",
+					"url": "https://coworkinglandem.es",
+					"image": "https://coworkinglandem.es/static/images/oficina/camprodon5.jpg"
+					"sameAs": [
+						"https://www.instagram.com/landempm",
+						"https://es.linkedin.com/company/landem"
+					],
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Carrer de Camprodon, 26",
+						"addressLocality": "Barcelona",
+						"addressRegion": "Cataluña",
+						"postalCode": "08012",
+						"addressCountry": "ES"
+					},
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"telephone": "+34 934 579 827",
+						"contactType": "Customer Service"
+					}
+				}
+		</script>
 		<link rel="stylesheet" href="{{ url_for('static', filename='css/redirect.css') }}" />
 	</head>
 	<body>

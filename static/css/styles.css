@@ -1,8 +1,7 @@
 /*###################################################################################*/
 @font-face {
 	font-family: "Dosis";
-	src: url("../fonts/static/Dosis-VariableFont_wght.ttf")
-		format("truetype");
+	src: url("../fonts/static/Dosis-VariableFont_wght.ttf") format("truetype");
 }
 
 /*###################################################################################*/
@@ -115,11 +114,11 @@ section {
 	height: 60vh;
 	width: 100%;
 	margin-top: 90px;
-	background-image: url(../images/oficina/camprodon5.jpg); 
+	background-image: url(../images/oficina/camprodon5.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.7);
 	background-blend-mode: multiply;
 	display: flex;
 	flex-direction: column;
@@ -197,7 +196,7 @@ section {
 	color: #e0e0e0;
 }
 
-.mapa-location__iframe{
+.mapa-location__iframe {
 	width: 480px;
 	height: 500px;
 }
@@ -327,11 +326,16 @@ section {
 .modal__contenido {
 	position: relative;
 	background: #fff;
-	width: 500px;
+	width: 90%; 
+	max-width: 500px; 
+	max-height: 80vh; 
 	margin: 100px auto 35px auto;
 	padding: 2rem;
 	z-index: 1001;
 	border-radius: 10px;
+
+	overflow-y: auto; 
+	box-sizing: border-box; 
 }
 
 .modal__contenido--contacto {
@@ -472,7 +476,7 @@ form button:hover {
 	font-size: 16px;
 }
 
-.footer-center img{
+.footer-center img {
 	height: 20px;
 	width: auto;
 }
@@ -508,4 +512,3 @@ form button:hover {
 	opacity: 1;
 	z-index: 999;
 }
-

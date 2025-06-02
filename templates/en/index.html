@@ -3,24 +3,68 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Coworking | Landem</title>
-		<link
-			rel="icon"
-			type="image/x-icon"
-			href="/favicon.ico"
-		/>
+		<title>
+			Coworking Space in Gràcia, Barcelona | Flexible Offices - Landem
+		</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="title" content="Coworking-Landem" />
 		<meta
 			name="description"
-			content="Discover our modern coworking space in Barcelona: flexible offices, meeting rooms, high-speed internet, and a professional community ideal for freelancers, startups, and businesses."
+			content="Rent your office at our coworking space in Gràcia, Barcelona. Modern spaces, fast internet, meeting rooms, and an entrepreneurial community. Book today and work better!"
 		/>
 		<meta
 			name="keywords"
 			content="Coworking, shared office, workspace, coworking in Barcelona, meeting rooms, flexible offices, entrepreneurial community, collaborative space, remote work, networking, coworking in Gràcia, coworking space in Barcelona, shared offices in Gràcia, office rental in Barcelona, meeting rooms in Gràcia, flexible offices in Barcelona, entrepreneurial community in Gràcia, collaborative space in Barcelona, remote work in Gràcia, networking in Barcelona, coworking with natural light, workspace with 24/7 access, coworking with equipped kitchen, offices with air conditioning, coworking near Lesseps metro, workspace with private lockers, coworking with printer and scanner, coworking space for freelancers, private offices in Gràcia, coworking with event rooms"
 		/>
 		<meta name="author" content="Lucas Arce" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+		<meta
+			property="og:title"
+			content="Coworking in Gràcia, Barcelona | Landem"
+		/>
+		<meta
+			property="og:description"
+			content="Flexible offices, meeting rooms, and a professional community. Reserve your workspace in Gràcia!"
+		/>
+		<meta
+			property="og:image"
+			content="{{ url_for('static', filename='images/oficina/camprodon5.jpg') }}"
+		/>
+		<meta property="og:url" content="https://coworkinglandem.es/en/" />
+		<meta property="og:type" content="website" />
+		<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "CoworkingSpace",
+					"name": "Coworking Landem",
+					"url": "https://coworkinglandem.es",
+					"image": "https://coworkinglandem.es/static/images/oficina/camprodon5.jpg"
+					"sameAs": [
+						"https://www.instagram.com/landempm",
+						"https://es.linkedin.com/company/landem"
+					],
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Carrer de Camprodon, 26",
+						"addressLocality": "Barcelona",
+						"addressRegion": "Cataluña",
+						"postalCode": "08012",
+						"addressCountry": "ES"
+					},
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"telephone": "+34 934 579 827",
+						"contactType": "Customer Service"
+					}
+				}
+		</script>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/styles.css') }}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/responsive.css') }}"
+		/>
 		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	</head>
 	<body>
@@ -58,10 +102,10 @@
 			<button id="accept-cookies">Accept</button>
 		</div>
 		<div class="anuncio-principal">
-			<h1 class="anuncio-principal__titulo">COWORKING SPACE</h1>
-			<h1 class="anuncio-principal__subtitulo">
+			<h1 class="anuncio-principal__titulo">Coworking on Gràcia, Barcelona</h1>
+			<h2 class="anuncio-principal__subtitulo">
 				A different space to work comfortably and quietly!
-			</h1>
+			</h2>
 		</div>
 		<section id="Nosotros">
 			<div class="section-title">
@@ -221,42 +265,42 @@
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon0.jpg') }}"
 					class="slide active"
-					alt="Foto 1"
+					alt="Coworking office with natural light in Gràcia, Barcelona"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon1.jpg') }}"
 					class="slide"
-					alt="Foto 2"
+					alt="Modern meeting room in coworking space in Barcelona"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon2.jpg') }}"
 					class="slide"
-					alt="Foto 3"
+					alt="Shared workspace with large desks in Gràcia"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon4.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Common area for networking and relaxing at coworking"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon6.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Minimalist design coworking entrance in Barcelona"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon7.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Flexible spaces for startups and freelancers in Gràcia"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon8.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Coworking with high-speed internet connection"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon9.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Collaborative atmosphere in shared office in Barcelona"
 				/>
 			</div>
 		</section>
@@ -323,7 +367,7 @@
 							<input type="checkbox" name="privacidad" required />
 							I agree to receive a reply from Landem
 						</label>
-						<input type="hidden" name="idioma" value="{{ lang }}">
+						<input type="hidden" name="idioma" value="{{ lang }}" />
 						<button type="submit">Submit</button>
 					</form>
 				</div>
@@ -377,7 +421,7 @@
 						<input type="checkbox" name="privacidad" required />
 						I agree to receive a reply from Landem
 					</label>
-					<input type="hidden" name="idioma" value="{{ lang }}">
+					<input type="hidden" name="idioma" value="{{ lang }}" />
 					<button type="submit">Submit</button>
 				</form>
 			</div>
@@ -391,11 +435,17 @@
 				/>
 			</div>
 			<div class="footer-center">
-				<img src="{{ url_for('static', filename='images/iconos/llamar.png') }}" alt="Phone" />
+				<img
+					src="{{ url_for('static', filename='images/iconos/llamar.png') }}"
+					alt="Phone"
+				/>
 				<p>934 579 827</p>
 			</div>
 			<div class="footer-center">
-				<img src="{{ url_for('static', filename='images/iconos/carta.png') }}" alt="Mail" />
+				<img
+					src="{{ url_for('static', filename='images/iconos/carta.png') }}"
+					alt="Mail"
+				/>
 				<p>info@landem.es</p>
 			</div>
 			<div class="footer-right">&copy; Copyright 2025 Landem</div>

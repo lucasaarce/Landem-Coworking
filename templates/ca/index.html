@@ -3,24 +3,68 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Coworking | Landem</title>
-		<link
-			rel="icon"
-			type="image/x-icon"
-			href="/favicon.ico"
-		/>
+		<title>
+			Espai de Coworking a Gràcia, Barcelona | Oficines Flexibles - Landem
+		</title>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="title" content="Coworking-Landem" />
 		<meta
 			name="description"
-			content="Descobreix el nostre modern espai de coworking a Barcelona: oficines flexibles, sales de reunions, internet d'alta velocitat i una comunitat professional ideal per a freelancers, startups i empreses."
+			content="Lloga la teva oficina al nostre coworking a Gràcia, Barcelona. Espais moderns, internet ràpid, sales de reunions i comunitat emprenedora. Reserva avui i treballa millor!"
 		/>
 		<meta
 			name="keywords"
 			content="coworking, oficina compartida, espai de treball, coworking a Barcelona, sales de reunions, oficines flexibles, comunitat emprenedora, espai col·laboratiu, treball remot, networking, coworking a Gràcia, espai de coworking a Barcelona, oficines compartides a Gràcia, lloguer de despatxos a Barcelona, sales de reunions a Gràcia, oficines flexibles a Barcelona, comunitat emprenedora a Gràcia, espai col·laboratiu a Barcelona, teletreball a Gràcia, networking a Barcelona, coworking amb llum natural, espai de treball amb accés 24/7, coworking amb cuina equipada, oficines amb aire condicionat, coworking prop del metro Lesseps, espai de treball amb taquilles privades, coworking amb impressora i escàner, espai de coworking per a autònoms, oficines privades a Gràcia, coworking amb sales d'esdeveniments"
 		/>
 		<meta name="author" content="Lucas Arce" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"/>
-		<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+		<meta
+			property="og:title"
+			content="Coworking a Gràcia, Barcelona | Landem"
+		/>
+		<meta
+			property="og:description"
+			content="Oficines flexibles, sales de reunions i una comunitat professional. Reserva el teu espai de treball a Gràcia!"
+		/>
+		<meta
+			property="og:image"
+			content="{{ url_for('static', filename='images/oficina/camprodon5.jpg') }}"
+		/>
+		<meta property="og:url" content="https://coworkinglandem.es/ca/" />
+		<meta property="og:type" content="website" />
+		<script type="application/ld+json">
+				{
+					"@context": "https://schema.org",
+					"@type": "CoworkingSpace",
+					"name": "Coworking Landem",
+					"url": "https://coworkinglandem.es",
+					"image": "https://coworkinglandem.es/static/images/oficina/camprodon5.jpg"
+					"sameAs": [
+						"https://www.instagram.com/landempm",
+						"https://es.linkedin.com/company/landem"
+					],
+					"address": {
+						"@type": "PostalAddress",
+						"streetAddress": "Carrer de Camprodon, 26",
+						"addressLocality": "Barcelona",
+						"addressRegion": "Cataluña",
+						"postalCode": "08012",
+						"addressCountry": "ES"
+					},
+					"contactPoint": {
+						"@type": "ContactPoint",
+						"telephone": "+34 934 579 827",
+						"contactType": "Customer Service"
+					}
+				}
+		</script>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/styles.css') }}"
+		/>
+		<link
+			rel="stylesheet"
+			href="{{ url_for('static', filename='css/responsive.css') }}"
+		/>
 		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	</head>
 	<body>
@@ -58,10 +102,10 @@
 			<button id="accept-cookies">Acceptar</button>
 		</div>
 		<div class="anuncio-principal">
-			<h1 class="anuncio-principal__titulo">ESPAI DE COWORKING</h1>
-			<h1 class="anuncio-principal__subtitulo">
+			<h1 class="anuncio-principal__titulo">Coworking a Gràcia, Barcelona</h1>
+			<h2 class="anuncio-principal__subtitulo">
 				Un espai diferent per treballar còmode i tranquil!
-			</h1>
+			</h2>
 		</div>
 		<section id="Nosotros">
 			<div class="section-title">
@@ -223,42 +267,42 @@
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon0.jpg') }}"
 					class="slide active"
-					alt="Foto 1"
+					alt="Oficina coworking amb llum natural a Gràcia, Barcelona"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon1.jpg') }}"
 					class="slide"
-					alt="Foto 2"
+					alt="Sala de reunions moderna en un espai de coworking a Barcelona"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon2.jpg') }}"
 					class="slide"
-					alt="Foto 3"
+					alt="Espai de treball compartit amb taules àmplies a Gràcia"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon4.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Zona comuna per fer networking i descansar en coworking"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon6.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Entrada de coworking amb disseny minimalista a Barcelona"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon7.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Espais flexibles per a startups i autònoms a Gràcia"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon8.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Coworking amb connexió a internet d'alta velocitat"
 				/>
 				<img
 					src="{{ url_for('static', filename='images/oficina/camprodon9.jpg') }}"
 					class="slide"
-					alt="Foto 4"
+					alt="Ambient col·laboratiu en oficina compartida a Barcelona"
 				/>
 			</div>
 		</section>
@@ -325,7 +369,7 @@
 							<input type="checkbox" name="privacidad" required />
 							Accepto rebre resposta de Landem
 						</label>
-						<input type="hidden" name="idioma" value="{{ lang }}">
+						<input type="hidden" name="idioma" value="{{ lang }}" />
 						<button type="submit">Enviar</button>
 					</form>
 				</div>
@@ -379,7 +423,7 @@
 						<input type="checkbox" name="privacidad" required />
 						Accepto rebre resposta de Landem
 					</label>
-					<input type="hidden" name="idioma" value="{{ lang }}">
+					<input type="hidden" name="idioma" value="{{ lang }}" />
 					<button type="submit">Enviar</button>
 				</form>
 			</div>
@@ -393,11 +437,17 @@
 				/>
 			</div>
 			<div class="footer-center">
-				<img src="{{ url_for('static', filename='images/iconos/llamar.png') }}" alt="Teléfono" />
+				<img
+					src="{{ url_for('static', filename='images/iconos/llamar.png') }}"
+					alt="Teléfono"
+				/>
 				<p>934 579 827</p>
 			</div>
 			<div class="footer-center">
-				<img src="{{ url_for('static', filename='images/iconos/carta.png') }}" alt="Mail" />
+				<img
+					src="{{ url_for('static', filename='images/iconos/carta.png') }}"
+					alt="Mail"
+				/>
 				<p>info@landem.es</p>
 			</div>
 			<div class="footer-right">&copy; Copyright 2025 Landem</div>
