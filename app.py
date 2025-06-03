@@ -1,12 +1,34 @@
-from flask import Flask, render_template, request, redirect, send_from_directory
+from flask import Flask, render_template, request, redirect, send_from_directory # type: ignore
 import os
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 import smtplib
 from email.mime.text import MIMEText
 
 load_dotenv()
 
 app = Flask(__name__)  
+
+# --------------------------
+# Rutas de páginas
+# --------------------------
+@app.route('/')
+def index():
+    return render_template('index.html', lang='')  
+
+@app.route('/<lang>')
+def idioma(lang):
+    return render_template(f'{lang}/index.html', lang=lang)
+
+@app.route('/redirect')
+def redirect_es():
+    return render_template('redirect.html')
+
+@app.route('/<lang>/redirect')
+def redirect_idioma(lang):
+    if lang in ['ca', 'en']:
+        return render_template(f'{lang}/redirect.html')
+    else:
+        return redirect('/')
 
 @app.route('/robots.txt')
 def robots():
@@ -50,28 +72,6 @@ def enviar_correo(email, telefono, empresa, plan, personas, mensaje):
 
     except Exception as e:
         print("❌ Error al enviar correo:", e)
-
-# --------------------------
-# Rutas de páginas
-# --------------------------
-@app.route('/')
-def index():
-    return render_template('index.html', lang='')  
-
-@app.route('/<lang>')
-def idioma(lang):
-    return render_template(f'{lang}/index.html', lang=lang)
-
-@app.route('/redirect')
-def redirect_es():
-    return render_template('redirect.html')
-
-@app.route('/<lang>/redirect')
-def redirect_idioma(lang):
-    if lang in ['ca', 'en']:
-        return render_template(f'{lang}/redirect.html')
-    else:
-        return redirect('/')
 
 # --------------------------
 # Ruta de formulario
